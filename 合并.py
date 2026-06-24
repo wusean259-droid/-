@@ -500,7 +500,7 @@ def run_fof_dashboard():
                 st.dataframe(pd.DataFrame(results), use_container_width=True, hide_index=True)
                 st.success("✅ **架构师点评**：同期大盘 (Beta)可以横向对比：如果他的绝对收益是 30%，大盘也是 30%，那 Alpha 就是 0，风险评级再高也不值得买；只有那些 Beta 一般但 Alpha 极高，且打着『🛡️ 稳健画线派』标签的人，才是真正的配置核心。")
             else:
-                st.warning("暂未获取到有效的任期归因数据。")
+                st.warning("暂未获取到有效的任期归因数据。公网有时无法有效抓取相关数据可以换个时间试试 可以线下来找我用私网哈哈哈畅通无阻")
                 # TAB 5: 投资组合整体回测 (从分到总)
         with tab5:
             st.subheader("🏆 投资组合整体实盘试算 (截至最新刷新日)")
@@ -628,7 +628,7 @@ def run_fof_dashboard():
         # ==========================================
         with tab6:
             st.subheader("📚 历史组合记忆库与风险收益雷达")
-            st.markdown("在这里管理你测算过的所有配置。目前公用存档但具体信息不会暴露 通过跨组合的“风险收益散点图”，直观挑选最契合你风险承受能力的终极方案。")
+            st.markdown("在这里管理你测算过的所有配置。目前公用存档但只是个人使用参考无关紧要, 谢谢谅解. 通过跨组合的“风险收益散点图”，直观挑选最契合你风险承受能力的终极方案。")
             
             if not st.session_state["portfolio_history"]:
                 st.info("💡 暂无组合历史记录。请先在【🏆 投资组合整体回测】页面调节配额并点击 [确认并应用当前配额] 按钮。")
