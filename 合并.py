@@ -25,7 +25,7 @@ def load_local_history():
             with open(HISTORY_FILE, 'r', encoding='utf-8') as f:
                 return json.load(f)
         except Exception as e:
-            st.sidebar.error(f"⚠️ 本地记忆库读取失败: {e}")
+            st.sidebar.error(f"⚠️ 本地记忆库读取失败,正常的: {e}")
             return []
     return []
 
@@ -628,7 +628,7 @@ def run_fof_dashboard():
         # ==========================================
         with tab6:
             st.subheader("📚 历史组合记忆库与风险收益雷达")
-            st.markdown("在这里管理你测算过的所有配置。目前公用存档但只是个人使用参考无关紧要, 谢谢谅解. 通过跨组合的“风险收益散点图”，直观挑选最契合你风险承受能力的终极方案。")
+            st.markdown("在这里管理你测算过的所有配置。目前公用存档但只是个人使用参考无关紧要且重开会自动删除, 谢谢谅解. 通过跨组合的“风险收益散点图”，直观挑选最契合你风险承受能力的终极方案。")
             
             if not st.session_state["portfolio_history"]:
                 st.info("💡 暂无组合历史记录。请先在【🏆 投资组合整体回测】页面调节配额并点击 [确认并应用当前配额] 按钮。")
