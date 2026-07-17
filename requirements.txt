@@ -1,6 +1,0 @@
-streamlit
-akshare
-pandas
-numpy
-requests
-matplotlib
