@@ -1,0 +1,9 @@
+streamlit
+akshare
+pandas
+numpy
+requests
+matplotlib
+openai
+plotly
+chromadb>=0.4.22
